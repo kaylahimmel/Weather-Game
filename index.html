@@ -3,13 +3,54 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Cleveland Weather Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- My CSS stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/css/style.css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Pacifico" rel="stylesheet">
 </head>
 <body>
-    
-
+    <header>
+        <h3>Let's play</h3>
+        <h1>The Cleveland Weather Game!</h1>
+    </header>
+    <div class="container">
+        <main class="row">
+            <div class="col-md-3">
+                <div class="scoreboard">
+                    <h4>Goal Score:<span class="goal"></span></h4> 
+                    <br>
+                    <h4>Your Score:<span class="userScore"></span></h4>
+                    <br>
+                    <p>How to Play:</p>
+                    <p>Change the weather to gain points. To win the game, you'll need to match the goal score exactly.</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="choices">
+                    <figure class="overcast">
+                        <img src="Assets/images/weather_images-overcast.png" alt="overcast skies">
+                        <figcaption>Partly Sunny</figcaption>
+                    </figure>
+                    <figure class="lightning">
+                        <img src="Assets/images/weather_images-lightning.png" alt="lightning storm">
+                        <figcaption>Lightning!</figcaption>
+                    </figure>
+                    <figure class="snow">
+                        <img src="Assets/images/weather_images-snow.png" alt="snow storm">
+                        <figcaption>Snow Storm</figcaption>
+                    </figure>
+                    <figure class="tornado">
+                        <img src="Assets/images/weather_images-tornado.png" alt="tornado">
+                        <figcaption>Tornado Watch!</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+    </div>
 
     <script src="Assets/javascript/game.js"></script>
 </body>
