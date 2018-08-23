@@ -1,36 +1,63 @@
 // Assign variables
-var startGame = function() {
+var choiceClasses = [".overcast", ".lightning", ".storm", ".tornado"]
+
+$(startGame) = 
+    // set new goal score
+    $(ranGoal) = 0;
+    // set userscore to 0
+    $(".userScore") = 0;
+    // assign new values to the images
+    $(ranValue).textContent(choiceClasses[i]) {
+    // update the wins/losses section
+        if function() {
+            userScore === ranGoal {
+                wins++;
+            }
+        }
+        else if function() {
+            userScore > ranGoal {
+                losses++;
+            }
+        }
+    };
+
+// Create random values between 1 - 12
+var ranValue = function() {
+    var minValue = 1;
+    var maxValue = 12;
+    var ranValue = minValue + (maxValue - minValue) * Math.random() + 1;
+    console.log(ranValue)
+}
+
+// Assign random values to the HtML images
+for (var i = 0; i < choiceClasses.length; i++) {
+    (ranValue).indexOf(choiceClasses);
+}
+
+// Assign random goal score to appear at the start of each game in the HTML between 19-120
+var ranGoal = function() {
+var minGoal = 19;
+var maxGoal = 120;
+var ranGoal = minGoal + (maxGoal - minGoal) * Math.random() + 1
+console.log(ranGoal)
+}
+
+// Assign user's score to start at 0 at the start of each--assign to class: .userScore
+var userScore = function() {
     
 }
 
-
-
-// Assign random goal score to appear at the start of each game in the HTML between 19-120
-var min = 19;
-var max_top = 120;
-var goal = min + (max_top - min) * Math.random() + 1
-console.log(goal)
-
-// assign to class: .goal
-var startGame = function() {
-    // Create our array of underscores
-    for (var i = 0; i < chosenState.length; i++) {
-        puzzle.push("_")
-    }
-    console.log(chosenState.length)
-
-    
-
-
-// Assign user's score to start at 0 at the start of each--assign to class: .userScore
 // Have values from the images that have been clicked add to the user's score--assign to class: .userScore
 
 
 
 // Assign random values to the HtML images with values between 1 - 12
 // assign to classes: .overcast, .lightning, .snow, .tornado
-$(document).ready(function() {
-    $(".overcast").click(function() {
+$(".choices").click(function(){
+    $("input:text").val(function(n, c){
+        return c + " Griffin";
+    });
+});
         $("___").val("___");
     });
 });
