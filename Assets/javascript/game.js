@@ -1,3 +1,4 @@
+// VARIABLES -----------------------------------------------------------------------------------
 // Assign variables
 var choiceClasses = [".overcast", ".lightning", ".storm", ".tornado"]
 
@@ -21,6 +22,7 @@ $(startGame) =
         }
     };
 
+
 // Create random values between 1 - 12
 var ranValue = function() {
     var minValue = 1;
@@ -29,7 +31,14 @@ var ranValue = function() {
     console.log(ranValue)
 }
 
-// Assign random values to the HtML images
+// assign "ranValue" to each image using HTML classes: .overcast, .lightning, .snow, .tornado
+
+
+
+
+
+
+// Assign random values to the HTML images
 for (var i = 0; i < choiceClasses.length; i++) {
     (ranValue).indexOf(choiceClasses);
 }
@@ -42,25 +51,13 @@ var ranGoal = minGoal + (maxGoal - minGoal) * Math.random() + 1
 console.log(ranGoal)
 }
 
-// Assign user's score to start at 0 at the start of each--assign to class: .userScore
-var userScore = function() {
-    
-}
 
-// Have values from the images that have been clicked add to the user's score--assign to class: .userScore
-
+// Have values from the images that have been clicked add to the user's score--assign to HTML class: .userScore
+// something like this code maybe?
+//var numbering = function(number) {
+    //currentNumber = currentNumber.concat(number);
 
 
-// Assign random values to the HtML images with values between 1 - 12
-// assign to classes: .overcast, .lightning, .snow, .tornado
-$(".choices").click(function(){
-    $("input:text").val(function(n, c){
-        return c + " Griffin";
-    });
-});
-        $("___").val("___");
-    });
-});
 // Hide these values until the user clicks each image (so they have to guess)
 
 
