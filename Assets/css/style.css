@@ -36,6 +36,7 @@ figure {
     text-align: center;
     font-size: 30px; 
     width: 300px;
+    height: auto;
     font-family: 'Pacifico', cursive;
 }
 
