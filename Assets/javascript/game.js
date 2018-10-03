@@ -21,20 +21,16 @@ var tornado = Math.floor(Math.random() * 12) + 1;
     console.log(tornado);
 
 var objects = [ 
-    { 
-        name: "overcast",
+    {   name: "overcast",
         value: (0)
     },
-    { 
-        name: "lightning",
+    {   name: "lightning",
         value: 0
     },
-    { 
-        name: "snow",
+    {   name: "snow",
         value: 0
     },
-    { 
-        name: "tornado",
+    {   name: "tornado",
         value: 0
     }
 ]
@@ -102,14 +98,14 @@ $(document).ready(function() {
         // update the wins/losses section
         if (userScore == ranGoal) {
             wins++;
-            $("#score").html(userScore);
-            $("#wins").text(" " + wins);
+            $(".score").html(userScore);
+            $(".wins").text(" " + wins);
             alert("Woop woop, you won! Play again.")
             startGame();
         } else if ( userScore > ranGoal) {
             losses++;
-            $("#score").html(userScore);
-            $("#losses").text(" " + losses);
+            $(".score").html(userScore);
+            $(".losses").text(" " + losses);
             alert("Sorry, you lose. Try again.")
             startGame();
         }
